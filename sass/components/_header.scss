@@ -1,6 +1,0 @@
-.header {
-  @include bordered($color: $border-secondary);
-}
-.header__container {
-  @include flex($jc: space-between, $ai: center);
-}

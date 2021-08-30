@@ -37,26 +37,9 @@ a {
 }
 .container {
   margin: 0 auto;
+  width: 1200px;
   padding: 0 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 .portfolio-section {
-  @media screen and (min-width: 480px) {
-    @include padding($t: 60px, $b: 60px);
-  }
-  @media screen and (min-width: 768px) {
-    @include padding;
-  }
-  @media screen and (min-width: 1200px) {
-    @include padding;
-  }
+  @include padding;
 }

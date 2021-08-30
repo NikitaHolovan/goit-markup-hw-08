@@ -1,0 +1,8 @@
+.button-list {
+  @include flex($jc: center);
+  margin-bottom: 50px;
+}
+
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
+}
