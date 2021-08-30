@@ -1,0 +1,32 @@
+@mixin bordered(
+  $thickness: 1px,
+  $style: solid,
+  $color: transparent,
+  $radius: 4px
+) {
+  border: $thickness $style $color;
+  border-radius: $radius;
+}
+
+@mixin transit($transitionType: all, $transitionTime: 250ms) {
+  transition: $transitionType $transitionTime cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin flex($jc: false, $ai: false, $d: false, $w: false) {
+  @extend %d-flex;
+  @if ($jc) {
+    justify-content: $jc;
+  }
+  @if ($ai) {
+    align-items: $ai;
+  }
+  @if ($d) {
+    flex-direction: $d;
+  }
+  @if ($w) {
+    flex-wrap: $w;
+  }
+}
+@mixin padding($t: 94px, $r: 0, $b: 94px, $l: 0) {
+  padding: $t $r $b $l;
+}

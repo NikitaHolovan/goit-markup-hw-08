@@ -1,0 +1,26 @@
+.portfolio-list__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-list__overlay {
+  @extend %centeredFlex;
+  @include transit(transform);
+  padding: 0 24px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: $overlay-portfolio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+  transform: translateY(100%);
+}
+.portfolio-list__link:hover .portfolio-list__overlay {
+  transform: translateY(0);
+}

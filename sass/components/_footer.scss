@@ -1,0 +1,21 @@
+.footer {
+  background-color: $background-hero-color;
+  @include padding($t: 60px, $b: 60px);
+}
+.footer__container {
+  display: flex;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  padding: 12px 0 20px 0;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
