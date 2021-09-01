@@ -1,0 +1,43 @@
+.section-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero480.png);
+  @include padding($t: 118px, $b: 118px);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $background-hero-color;
+  @media screen and(min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero768.png);
+  }
+  @media screen and(min-width: 1200px) {
+    @include padding($t: 200px, $b: 200px);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero1600.png);
+  }
+}
+.section-hero__title {
+  color: $primary-white-color;
+  font-weight: 900;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}

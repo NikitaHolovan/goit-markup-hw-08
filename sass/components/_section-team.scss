@@ -1,0 +1,8 @@
+.section-team {
+  background-color: $background-secondary-color;
+}
+.section-team__list {
+  @media screen and(min-width:1200px) {
+    @include flex($jc: space-between);
+  }
+}

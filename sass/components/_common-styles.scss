@@ -29,15 +29,24 @@ a {
 .title {
   color: $primary-text-color;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  width: 100vw;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -49,12 +58,10 @@ a {
     width: 1200px;
   }
 }
-.portfolio-section {
-  @media screen and (min-width: 480px) {
+
+.section {
+  @media screen and (max-width: 1199px) {
     @include padding($t: 60px, $b: 60px);
-  }
-  @media screen and (min-width: 768px) {
-    @include padding;
   }
   @media screen and (min-width: 1200px) {
     @include padding;

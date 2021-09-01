@@ -1,0 +1,101 @@
+.form {
+  @include flex($d: column);
+}
+.form__group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form__label {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.form__input,
+.form__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding: 0 20px 0 42px;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  & + svg {
+    @include transit;
+  }
+  &:hover,
+  &:focus {
+    @include bordered($color: $accent-color) // border: 1px solid $accent-color;
+;
+  }
+  &:hover + svg,
+  &:focus + svg {
+    fill: $accent-color;
+  }
+}
+.form__textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+.form__textarea::placeholder {
+  color: $placeholder-modal;
+}
+.form__svg {
+  position: absolute;
+  left: 12px;
+  top: 33px;
+}
+
+.form__group-comment {
+  margin-bottom: 20px;
+}
+.form__group-checkbox {
+  @extend %centeredFlex;
+  margin-bottom: 30px;
+}
+.form__agreement {
+  @include flex($ai: center);
+}
+.form__icon {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icons/icon_checkbox.svg);
+  @include transit;
+  &:hover svg {
+    fill: $accent-color;
+  }
+}
+
+.form__checkbox {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+  &:checked + .form__icon {
+    background-image: url(../images/icons/icon_check.svg);
+  }
+}
+
+.form__text {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.form__link {
+  text-decoration: underline;
+  color: $accent-color;
+  margin-left: 4px;
+}
