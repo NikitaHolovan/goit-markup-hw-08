@@ -1,0 +1,27 @@
+.contacts-box__address {
+  font-style: normal;
+  margin-top: 20px;
+}
+.contacts-box__link {
+  color: $footer-contact;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  @include transit(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts-box__link-address {
+  color: $primary-white-color;
+}
+.contacts-box__item {
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
+}
+.contacts-box__item:not(:last-child) {
+  margin-bottom: 9px;
+}

@@ -317,15 +317,16 @@
       <!--Team-->
 
       <section class="section-team section">
-        <div class="container">
+        <div class="section-team__container container">
           <h2 class="title">Наша команда</h2>
           <ul class="section-team__list list">
             <li class="section-team__box">
-              <img
-                src="./images/ihor.jpg"
+              <img srcset="./images/team/ihor450.jpg 1x, 
+                        ./images/team/ihor900@2x.jpg 2x, 
+                        ./images/team/ihor1350@3x.jpg 3x "
+                src="./images/team/ihor450.jpg"
                 alt="Игорь Демьяненко"
                 class="teammate-photo"
-                width="270"
               />
               <div class="section-team__text">
                 <h3 class="section-team__name">Игорь Демьяненко</h3>
@@ -365,11 +366,12 @@
 
             </li>
             <li class="section-team__box">
-              <img
-                src="./images/olha.jpg"
+              <img srcset="./images/team/olha450.jpg 1x, 
+                        ./images/team/olha900@2x.jpg 2x, 
+                        ./images/team/olha1350@3x.jpg 3x "
+                src="./images/team/olha450.jpg"                
                 alt="Ольга Репина"
                 class="teammate-photo"
-                width="270"
               />
               <div class="section-team__text">
                 <h3 class="section-team__name">Ольга Репина</h3>
@@ -409,11 +411,12 @@
 
             </li>
             <li class="section-team__box">
-              <img
-                src="./images/nikolay.jpg"
+              <img srcset="./images/team/nikolay450.jpg 1x, 
+                        ./images/team/nikolay900@2x.jpg 2x, 
+                        ./images/team/nikolay1350@3x.jpg 3x "
+                src="./images/team/nikolay450.jpg"               
                 alt="Николай Тарасов"
                 class="teammate-photo"
-                width="270"
               />
               <div class="section-team__text">
                 <h3 class="section-team__name">Николай Тарасов</h3>
@@ -453,11 +456,13 @@
 
             </li>
             <li class="section-team__box">
-              <img
-                src="./images/mykhail.jpg"
-                alt="Михаил Ермаков"
+              <img srcset="./images/team/mykhail450.jpg 1x, 
+                        ./images/team/mykhail900@2x.jpg 2x, 
+                        ./images/team/mykhail1350@3x.jpg 3x "
+                src="./images/team/mykhail450.jpg"              
+                  alt="Михаил Ермаков"
                 class="teammate-photo"
-                width="270"
+                
               />
               <div class="section-team__text">
                 <h3 class="section-team__name">Михаил Ермаков</h3>
@@ -507,7 +512,7 @@
 
       <section class="section-clients section">
         <h2 class="title">Постоянные клиенты</h2>
-        <div class="container section-clients__box">
+        <div class="section-clients__box container">
           <a href=" " class="section-clients__link">
             <svg width="106" height="60">
               <use href="./images/icons/icons.svg#icon-company_1"></use>
@@ -547,7 +552,7 @@
 
     <footer class="footer section" id="footer">
       <div class="footer__container container">
-        <div class="contacts-box">
+        <div class="contacts-box footer__box">
           <a href="/" class="logo logo--light"
             ><span class="logo logo--accent">Web</span>Studio</a
           >
@@ -573,7 +578,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
+        <div class="footer-social footer__box">
           <h2 class="footer__title">присоединяйтесь</h2>
 
           <ul class="social-list social-list--footer list">
@@ -609,7 +614,7 @@
           </ul>
 
         </div>
-        <div class="footer-mail">
+        <div class="footer-mail footer__box">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
           <form class="footer-mail__form">
             <div class="footer-mail__box">

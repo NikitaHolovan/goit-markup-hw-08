@@ -1,9 +1,13 @@
 .section-benefits {
-  @media screen and(max-width: 1199px) {
-    @include padding($b: 60px, $t: 60px);
+  @media screen and(max-width: 767px) {
+    @include padding($t: 45px, $l: 15px, $b: 45px, $r: 15px);
+  }
+
+  @media screen and(min-width: 768px) {
+    @include padding($b: 45px, $t: 45px);
   }
   @media screen and(min-width: 1200px) {
-    @include padding($b: 47px);
+    @include padding($l: 15px, $b: 47px, $r: 15px);
   }
 }
 
@@ -28,9 +32,9 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 2 * 30px) / 2);
-    margin: 0 15px;
+    margin: 15px;
   }
   @media screen and(min-width: 1200px) {
     width: 270px;

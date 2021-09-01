@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
 .list {
   list-style: none;
 }
@@ -35,7 +40,7 @@ a {
   @media screen and (min-width: 480px) {
     font-size: 28px;
 
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -61,7 +66,7 @@ a {
 
 .section {
   @media screen and (max-width: 1199px) {
-    @include padding($t: 60px, $b: 60px);
+    @include padding($t: 60px, $b: 45px);
   }
   @media screen and (min-width: 1200px) {
     @include padding;

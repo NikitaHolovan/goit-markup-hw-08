@@ -1,0 +1,48 @@
+.section-clients__box {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and(min-width:1200px) {
+    @include flex($ai: center, $jc: center);
+  }
+  @media screen and(max-width:1199px) {
+    padding: 0;
+  }
+}
+
+.section-clients__link {
+  border-radius: 4px;
+  @extend %centeredFlex;
+  @include transit(border-color);
+  @include bordered($color: $social-icons-primary);
+  @media screen and(max-width:767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    padding: 16px 52px;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    width: calc((100% - 6 * 15px) / 3);
+
+    margin: 15px;
+
+    padding: 16px 60px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding: 15px 31px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  & svg {
+    fill: $social-icons-primary;
+    @include transit(fill);
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}

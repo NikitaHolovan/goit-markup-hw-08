@@ -1,4 +1,7 @@
 .social-list {
+  @media screen and(max-width: 1199px) {
+    @include flex($jc: center);
+  }
   @include flex($jc: space-between);
   &--team {
     width: 100%;
