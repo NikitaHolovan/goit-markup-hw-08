@@ -65,6 +65,10 @@ img {
 }
 
 .section {
+  @media screen and (max-width: 767px) {
+    @include padding($t: 60px, $b: 60px);
+  }
+
   @media screen and (max-width: 1199px) {
     @include padding($t: 60px, $b: 45px);
   }

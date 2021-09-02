@@ -1,0 +1,11 @@
+.button-list {
+  @media screen and(max-width:767px) {
+    @include flex($jc: start, $w: wrap);
+  }
+  @include flex($jc: center);
+  margin-bottom: 50px;
+}
+
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
+}

@@ -1,0 +1,75 @@
+.portfolio-list {
+  @include flex($w: wrap);
+}
+
+.portfolio-section {
+  @media screen and(max-width:767px) {
+    padding-bottom: 60px;
+  }
+}
+.portfolio-container {
+  @media screen and(min-width:768px) {
+    padding: 0;
+  }
+}
+.portfolio-list__item {
+  @include flex($d: column);
+  background: $primary-white-color;
+  @media screen and(max-width:767px) {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
+    &:nth-child(n + 7) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.portfolio-list__link {
+  @include transit(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-list__card {
+  display: block;
+}
+
+.portfolio-list__text {
+  @include bordered($color: $border-primary);
+  @include padding($t: 20px, $b: 20px);
+  border-top: none;
+}
+.portfolio-list__example {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+  margin-top: auto;
+  margin-bottom: 4px;
+}
+
+.portfolio-list__example-type {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+}

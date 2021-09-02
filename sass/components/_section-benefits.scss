@@ -1,6 +1,6 @@
 .section-benefits {
   @media screen and(max-width: 767px) {
-    @include padding($t: 45px, $l: 15px, $b: 45px, $r: 15px);
+    @include padding($t: 60px, $l: 15px, $b: 60px, $r: 15px);
   }
 
   @media screen and(min-width: 768px) {

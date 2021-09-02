@@ -1,5 +1,8 @@
 .section-team {
   background-color: $background-secondary-color;
+  @media screen and(max-width:767px) {
+    @include padding($t: 60px, $b: 60px);
+  }
 }
 .section-team__container {
   @media screen and(min-width:768px) and (max-width: 1199px) {

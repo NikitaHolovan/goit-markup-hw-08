@@ -1,11 +1,11 @@
 .section-clients__box {
   display: flex;
-  flex-wrap: wrap;
+  @media screen and(max-width:1199px) {
+    flex-wrap: wrap;
+    padding: 0;
+  }
   @media screen and(min-width:1200px) {
     @include flex($ai: center, $jc: center);
-  }
-  @media screen and(max-width:1199px) {
-    padding: 0;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   @media screen and(min-width:1200px) {
-    padding: 15px 31px;
+    padding: 16px 32px;
     &:not(:last-child) {
       margin-right: 30px;
     }
