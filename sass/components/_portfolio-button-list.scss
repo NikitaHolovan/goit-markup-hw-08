@@ -1,9 +1,15 @@
 .button-list {
   @media screen and(max-width:767px) {
     @include flex($jc: start, $w: wrap);
+    margin-bottom: 40px;
+  }
+  @media screen and(min-width:768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
   }
   @include flex($jc: center);
-  margin-bottom: 50px;
 }
 
 .button-list__item:not(:last-child) {

@@ -20,7 +20,7 @@
 .section-about__overlay {
   position: absolute;
   left: 0;
-  bottom: 4px;
+  bottom: 0;
   width: 100%;
   background-color: $about-bgc;
   @include padding($t: 27px, $b: 27px);
