@@ -10,9 +10,7 @@
 }
 
 .footer-mail__button {
-  @media screen and(min-width:1200px) {
-    @include flex($ai: center);
-  }
+  @include flex($ai: center);
 }
 .footer-mail__email {
   @include bordered($color: $footer-modal-border);

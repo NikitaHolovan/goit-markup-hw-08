@@ -5,7 +5,7 @@
 
 .portfolio-list__overlay {
   @extend %centeredFlex;
-  @include transit(transform);
+  @include transit(all);
   padding: 0 24px;
   position: absolute;
   top: 0%;
@@ -20,7 +20,9 @@
   letter-spacing: 0.03em;
   color: $primary-white-color;
   transform: translateY(100%);
+  opacity: 0;
 }
 .portfolio-list__link:hover .portfolio-list__overlay {
   transform: translateY(0);
+  opacity: 1;
 }
