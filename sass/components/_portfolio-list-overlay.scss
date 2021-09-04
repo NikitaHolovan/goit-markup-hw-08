@@ -22,21 +22,21 @@
   transform: translateY(100%);
   opacity: 0;
 }
-// .portfolio-list__link:hover .portfolio-list__overlay {
-//   transform: translateY(0);
-//   opacity: 1;
-// }
-
-.portfolio-list__container:hover .portfolio-list__overlay {
+.portfolio-list__link:hover .portfolio-list__overlay {
   transform: translateY(0);
   opacity: 1;
 }
-.portfolio-list__container {
-  @include transit(box-shadow);
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
+// .portfolio-list__container:hover .portfolio-list__overlay {
+//   transform: translateY(0);
+//   opacity: 1;
+// }
+// .portfolio-list__container {
+//   @include transit(box-shadow);
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//   }
+// }
